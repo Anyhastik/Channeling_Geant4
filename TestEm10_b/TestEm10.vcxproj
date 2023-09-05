@@ -1,0 +1,395 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{A2B45F73-3367-3F48-9140-3B04BF502D0D}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.20348.0</WindowsTargetPlatformVersion>
+    <Platform>x64</Platform>
+    <ProjectName>TestEm10</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Geant4\workwithg4\TestEm10_b\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">TestEm10.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">TestEm10</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Geant4\workwithg4\TestEm10_b\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">TestEm10.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">TestEm10</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Geant4\workwithg4\TestEm10_b\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">TestEm10.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">TestEm10</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Geant4\workwithg4\TestEm10_b\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">TestEm10.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">TestEm10</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</GenerateManifest>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Geant4\boost\boost_1_80_0;C:\Geant4\workwithg4\TestEm10\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /external:I "C:/Geant4/geant4-v11.0.3_in/include/Geant4" /external:I "C:/Geant4/xerces/install/include" -Zm200</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <UseFullPaths>false</UseFullPaths>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);_CONSOLE;_WIN32;WIN32;OS;XPNET;_CRT_SECURE_NO_DEPRECATE;_WINDOWS;_PTL_ARCHIVE;G4UI_USE_WIN32;G4VIS_USE_OPENGLWIN32;G4VIS_USE_OPENGL;HAS_BOOST;G4LIB_BUILD_DLL;CMAKE_INTDIR="Debug"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_DEBUG;_CONSOLE;_WIN32;OS;XPNET;_CRT_SECURE_NO_DEPRECATE;_WINDOWS;_PTL_ARCHIVE;G4UI_USE_WIN32;G4VIS_USE_OPENGLWIN32;G4VIS_USE_OPENGL;HAS_BOOST;G4LIB_BUILD_DLL;CMAKE_INTDIR=\"Debug\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Geant4\boost\boost_1_80_0;C:\Geant4\workwithg4\TestEm10\include;C:\Geant4\geant4-v11.0.3_in\include\Geant4;C:\Geant4\xerces\install\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Geant4\boost\boost_1_80_0;C:\Geant4\workwithg4\TestEm10\include;C:\Geant4\geant4-v11.0.3_in\include\Geant4;C:\Geant4\xerces\install\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>C:\Geant4\geant4-v11.0.3_in\lib\G4Tree.lib;C:\Geant4\geant4-v11.0.3_in\lib\G4FR.lib;C:\Geant4\geant4-v11.0.3_in\lib\G4GMocren.lib;C:\Geant4\geant4-v11.0.3_in\lib\G4visHepRep.lib;C:\Geant4\geant4-v11.0.3_in\lib\G4RayTracer.lib;C:\Geant4\geant4-v11.0.3_in\lib\G4VRML.lib;C:\Geant4\geant4-v11.0.3_in\lib\G4OpenGL.lib;C:\Geant4\geant4-v11.0.3_in\lib\G4gl2ps.lib;C:\Geant4\geant4-v11.0.3_in\lib\G4vis_management.lib;C:\Geant4\geant4-v11.0.3_in\lib\G4modeling.lib;C:\Geant4\geant4-v11.0.3_in\lib\G4interfaces.lib;C:\Geant4\geant4-v11.0.3_in\lib\G4persistency.lib;C:\Geant4\geant4-v11.0.3_in\lib\G4error_propagation.lib;C:\Geant4\geant4-v11.0.3_in\lib\G4readout.lib;C:\Geant4\geant4-v11.0.3_in\lib\G4physicslists.lib;C:\Geant4\geant4-v11.0.3_in\lib\G4tasking.lib;C:\Geant4\geant4-v11.0.3_in\lib\G4parmodels.lib;COMCTL32.lib;opengl32.lib;C:\Geant4\xerces\install\lib\xerces-c_3D.lib;C:\Geant4\geant4-v11.0.3_in\lib\G4run.lib;C:\Geant4\geant4-v11.0.3_in\lib\G4event.lib;C:\Geant4\geant4-v11.0.3_in\lib\G4tracking.lib;C:\Geant4\geant4-v11.0.3_in\lib\G4processes.lib;C:\Geant4\geant4-v11.0.3_in\lib\G4analysis.lib;C:\Geant4\geant4-v11.0.3_in\lib\G4tools.lib;C:\Geant4\geant4-v11.0.3_in\lib\G4expat.lib;C:\Geant4\geant4-v11.0.3_in\lib\G4digits_hits.lib;C:\Geant4\geant4-v11.0.3_in\lib\G4track.lib;C:\Geant4\geant4-v11.0.3_in\lib\G4particles.lib;C:\Geant4\geant4-v11.0.3_in\lib\G4geometry.lib;C:\Geant4\geant4-v11.0.3_in\lib\G4materials.lib;C:\Geant4\geant4-v11.0.3_in\lib\G4zlib.lib;C:\Geant4\geant4-v11.0.3_in\lib\G4graphics_reps.lib;C:\Geant4\geant4-v11.0.3_in\lib\G4intercoms.lib;C:\Geant4\geant4-v11.0.3_in\lib\G4global.lib;C:\Geant4\geant4-v11.0.3_in\lib\G4clhep.lib;C:\Geant4\geant4-v11.0.3_in\lib\G4ptl.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64 /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Geant4/workwithg4/TestEm10_b/Debug/TestEm10.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Geant4/workwithg4/TestEm10_b/Debug/TestEm10.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Geant4\boost\boost_1_80_0;C:\Geant4\workwithg4\TestEm10\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /external:I "C:/Geant4/geant4-v11.0.3_in/include/Geant4" /external:I "C:/Geant4/xerces/install/include" -Zm200</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <UseFullPaths>false</UseFullPaths>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);_CONSOLE;_WIN32;WIN32;OS;XPNET;_CRT_SECURE_NO_DEPRECATE;_WINDOWS;NDEBUG;_PTL_ARCHIVE;G4UI_USE_WIN32;G4VIS_USE_OPENGLWIN32;G4VIS_USE_OPENGL;HAS_BOOST;G4LIB_BUILD_DLL;CMAKE_INTDIR="Release"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_CONSOLE;_WIN32;OS;XPNET;_CRT_SECURE_NO_DEPRECATE;_WINDOWS;NDEBUG;_PTL_ARCHIVE;G4UI_USE_WIN32;G4VIS_USE_OPENGLWIN32;G4VIS_USE_OPENGL;HAS_BOOST;G4LIB_BUILD_DLL;CMAKE_INTDIR=\"Release\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Geant4\boost\boost_1_80_0;C:\Geant4\workwithg4\TestEm10\include;C:\Geant4\geant4-v11.0.3_in\include\Geant4;C:\Geant4\xerces\install\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Geant4\boost\boost_1_80_0;C:\Geant4\workwithg4\TestEm10\include;C:\Geant4\geant4-v11.0.3_in\include\Geant4;C:\Geant4\xerces\install\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>C:\Geant4\geant4-v11.0.3_in\lib\G4Tree.lib;C:\Geant4\geant4-v11.0.3_in\lib\G4FR.lib;C:\Geant4\geant4-v11.0.3_in\lib\G4GMocren.lib;C:\Geant4\geant4-v11.0.3_in\lib\G4visHepRep.lib;C:\Geant4\geant4-v11.0.3_in\lib\G4RayTracer.lib;C:\Geant4\geant4-v11.0.3_in\lib\G4VRML.lib;C:\Geant4\geant4-v11.0.3_in\lib\G4OpenGL.lib;C:\Geant4\geant4-v11.0.3_in\lib\G4gl2ps.lib;C:\Geant4\geant4-v11.0.3_in\lib\G4vis_management.lib;C:\Geant4\geant4-v11.0.3_in\lib\G4modeling.lib;C:\Geant4\geant4-v11.0.3_in\lib\G4interfaces.lib;C:\Geant4\geant4-v11.0.3_in\lib\G4persistency.lib;C:\Geant4\geant4-v11.0.3_in\lib\G4error_propagation.lib;C:\Geant4\geant4-v11.0.3_in\lib\G4readout.lib;C:\Geant4\geant4-v11.0.3_in\lib\G4physicslists.lib;C:\Geant4\geant4-v11.0.3_in\lib\G4tasking.lib;C:\Geant4\geant4-v11.0.3_in\lib\G4parmodels.lib;COMCTL32.lib;opengl32.lib;C:\Geant4\xerces\install\lib\xerces-c_3D.lib;C:\Geant4\geant4-v11.0.3_in\lib\G4run.lib;C:\Geant4\geant4-v11.0.3_in\lib\G4event.lib;C:\Geant4\geant4-v11.0.3_in\lib\G4tracking.lib;C:\Geant4\geant4-v11.0.3_in\lib\G4processes.lib;C:\Geant4\geant4-v11.0.3_in\lib\G4analysis.lib;C:\Geant4\geant4-v11.0.3_in\lib\G4tools.lib;C:\Geant4\geant4-v11.0.3_in\lib\G4expat.lib;C:\Geant4\geant4-v11.0.3_in\lib\G4digits_hits.lib;C:\Geant4\geant4-v11.0.3_in\lib\G4track.lib;C:\Geant4\geant4-v11.0.3_in\lib\G4particles.lib;C:\Geant4\geant4-v11.0.3_in\lib\G4geometry.lib;C:\Geant4\geant4-v11.0.3_in\lib\G4materials.lib;C:\Geant4\geant4-v11.0.3_in\lib\G4zlib.lib;C:\Geant4\geant4-v11.0.3_in\lib\G4graphics_reps.lib;C:\Geant4\geant4-v11.0.3_in\lib\G4intercoms.lib;C:\Geant4\geant4-v11.0.3_in\lib\G4global.lib;C:\Geant4\geant4-v11.0.3_in\lib\G4clhep.lib;C:\Geant4\geant4-v11.0.3_in\lib\G4ptl.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64 /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Geant4/workwithg4/TestEm10_b/Release/TestEm10.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Geant4/workwithg4/TestEm10_b/Release/TestEm10.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Geant4\boost\boost_1_80_0;C:\Geant4\workwithg4\TestEm10\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /external:I "C:/Geant4/geant4-v11.0.3_in/include/Geant4" /external:I "C:/Geant4/xerces/install/include" -Zm200</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
+      <FavorSizeOrSpeed>Size</FavorSizeOrSpeed>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <UseFullPaths>false</UseFullPaths>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);_CONSOLE;_WIN32;WIN32;OS;XPNET;_CRT_SECURE_NO_DEPRECATE;_WINDOWS;NDEBUG;_PTL_ARCHIVE;G4UI_USE_WIN32;G4VIS_USE_OPENGLWIN32;G4VIS_USE_OPENGL;HAS_BOOST;G4LIB_BUILD_DLL;CMAKE_INTDIR="MinSizeRel"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_CONSOLE;_WIN32;OS;XPNET;_CRT_SECURE_NO_DEPRECATE;_WINDOWS;NDEBUG;_PTL_ARCHIVE;G4UI_USE_WIN32;G4VIS_USE_OPENGLWIN32;G4VIS_USE_OPENGL;HAS_BOOST;G4LIB_BUILD_DLL;CMAKE_INTDIR=\"MinSizeRel\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Geant4\boost\boost_1_80_0;C:\Geant4\workwithg4\TestEm10\include;C:\Geant4\geant4-v11.0.3_in\include\Geant4;C:\Geant4\xerces\install\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Geant4\boost\boost_1_80_0;C:\Geant4\workwithg4\TestEm10\include;C:\Geant4\geant4-v11.0.3_in\include\Geant4;C:\Geant4\xerces\install\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>C:\Geant4\geant4-v11.0.3_in\lib\G4Tree.lib;C:\Geant4\geant4-v11.0.3_in\lib\G4FR.lib;C:\Geant4\geant4-v11.0.3_in\lib\G4GMocren.lib;C:\Geant4\geant4-v11.0.3_in\lib\G4visHepRep.lib;C:\Geant4\geant4-v11.0.3_in\lib\G4RayTracer.lib;C:\Geant4\geant4-v11.0.3_in\lib\G4VRML.lib;C:\Geant4\geant4-v11.0.3_in\lib\G4OpenGL.lib;C:\Geant4\geant4-v11.0.3_in\lib\G4gl2ps.lib;C:\Geant4\geant4-v11.0.3_in\lib\G4vis_management.lib;C:\Geant4\geant4-v11.0.3_in\lib\G4modeling.lib;C:\Geant4\geant4-v11.0.3_in\lib\G4interfaces.lib;C:\Geant4\geant4-v11.0.3_in\lib\G4persistency.lib;C:\Geant4\geant4-v11.0.3_in\lib\G4error_propagation.lib;C:\Geant4\geant4-v11.0.3_in\lib\G4readout.lib;C:\Geant4\geant4-v11.0.3_in\lib\G4physicslists.lib;C:\Geant4\geant4-v11.0.3_in\lib\G4tasking.lib;C:\Geant4\geant4-v11.0.3_in\lib\G4parmodels.lib;COMCTL32.lib;opengl32.lib;C:\Geant4\xerces\install\lib\xerces-c_3D.lib;C:\Geant4\geant4-v11.0.3_in\lib\G4run.lib;C:\Geant4\geant4-v11.0.3_in\lib\G4event.lib;C:\Geant4\geant4-v11.0.3_in\lib\G4tracking.lib;C:\Geant4\geant4-v11.0.3_in\lib\G4processes.lib;C:\Geant4\geant4-v11.0.3_in\lib\G4analysis.lib;C:\Geant4\geant4-v11.0.3_in\lib\G4tools.lib;C:\Geant4\geant4-v11.0.3_in\lib\G4expat.lib;C:\Geant4\geant4-v11.0.3_in\lib\G4digits_hits.lib;C:\Geant4\geant4-v11.0.3_in\lib\G4track.lib;C:\Geant4\geant4-v11.0.3_in\lib\G4particles.lib;C:\Geant4\geant4-v11.0.3_in\lib\G4geometry.lib;C:\Geant4\geant4-v11.0.3_in\lib\G4materials.lib;C:\Geant4\geant4-v11.0.3_in\lib\G4zlib.lib;C:\Geant4\geant4-v11.0.3_in\lib\G4graphics_reps.lib;C:\Geant4\geant4-v11.0.3_in\lib\G4intercoms.lib;C:\Geant4\geant4-v11.0.3_in\lib\G4global.lib;C:\Geant4\geant4-v11.0.3_in\lib\G4clhep.lib;C:\Geant4\geant4-v11.0.3_in\lib\G4ptl.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64 /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Geant4/workwithg4/TestEm10_b/MinSizeRel/TestEm10.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Geant4/workwithg4/TestEm10_b/MinSizeRel/TestEm10.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Geant4\boost\boost_1_80_0;C:\Geant4\workwithg4\TestEm10\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /external:I "C:/Geant4/geant4-v11.0.3_in/include/Geant4" /external:I "C:/Geant4/xerces/install/include" -Zm200</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <UseFullPaths>false</UseFullPaths>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);_CONSOLE;_WIN32;WIN32;OS;XPNET;_CRT_SECURE_NO_DEPRECATE;_WINDOWS;NDEBUG;_PTL_ARCHIVE;G4UI_USE_WIN32;G4VIS_USE_OPENGLWIN32;G4VIS_USE_OPENGL;HAS_BOOST;G4LIB_BUILD_DLL;CMAKE_INTDIR="RelWithDebInfo"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_CONSOLE;_WIN32;OS;XPNET;_CRT_SECURE_NO_DEPRECATE;_WINDOWS;NDEBUG;_PTL_ARCHIVE;G4UI_USE_WIN32;G4VIS_USE_OPENGLWIN32;G4VIS_USE_OPENGL;HAS_BOOST;G4LIB_BUILD_DLL;CMAKE_INTDIR=\"RelWithDebInfo\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Geant4\boost\boost_1_80_0;C:\Geant4\workwithg4\TestEm10\include;C:\Geant4\geant4-v11.0.3_in\include\Geant4;C:\Geant4\xerces\install\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Geant4\boost\boost_1_80_0;C:\Geant4\workwithg4\TestEm10\include;C:\Geant4\geant4-v11.0.3_in\include\Geant4;C:\Geant4\xerces\install\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>C:\Geant4\geant4-v11.0.3_in\lib\G4Tree.lib;C:\Geant4\geant4-v11.0.3_in\lib\G4FR.lib;C:\Geant4\geant4-v11.0.3_in\lib\G4GMocren.lib;C:\Geant4\geant4-v11.0.3_in\lib\G4visHepRep.lib;C:\Geant4\geant4-v11.0.3_in\lib\G4RayTracer.lib;C:\Geant4\geant4-v11.0.3_in\lib\G4VRML.lib;C:\Geant4\geant4-v11.0.3_in\lib\G4OpenGL.lib;C:\Geant4\geant4-v11.0.3_in\lib\G4gl2ps.lib;C:\Geant4\geant4-v11.0.3_in\lib\G4vis_management.lib;C:\Geant4\geant4-v11.0.3_in\lib\G4modeling.lib;C:\Geant4\geant4-v11.0.3_in\lib\G4interfaces.lib;C:\Geant4\geant4-v11.0.3_in\lib\G4persistency.lib;C:\Geant4\geant4-v11.0.3_in\lib\G4error_propagation.lib;C:\Geant4\geant4-v11.0.3_in\lib\G4readout.lib;C:\Geant4\geant4-v11.0.3_in\lib\G4physicslists.lib;C:\Geant4\geant4-v11.0.3_in\lib\G4tasking.lib;C:\Geant4\geant4-v11.0.3_in\lib\G4parmodels.lib;COMCTL32.lib;opengl32.lib;C:\Geant4\xerces\install\lib\xerces-c_3D.lib;C:\Geant4\geant4-v11.0.3_in\lib\G4run.lib;C:\Geant4\geant4-v11.0.3_in\lib\G4event.lib;C:\Geant4\geant4-v11.0.3_in\lib\G4tracking.lib;C:\Geant4\geant4-v11.0.3_in\lib\G4processes.lib;C:\Geant4\geant4-v11.0.3_in\lib\G4analysis.lib;C:\Geant4\geant4-v11.0.3_in\lib\G4tools.lib;C:\Geant4\geant4-v11.0.3_in\lib\G4expat.lib;C:\Geant4\geant4-v11.0.3_in\lib\G4digits_hits.lib;C:\Geant4\geant4-v11.0.3_in\lib\G4track.lib;C:\Geant4\geant4-v11.0.3_in\lib\G4particles.lib;C:\Geant4\geant4-v11.0.3_in\lib\G4geometry.lib;C:\Geant4\geant4-v11.0.3_in\lib\G4materials.lib;C:\Geant4\geant4-v11.0.3_in\lib\G4zlib.lib;C:\Geant4\geant4-v11.0.3_in\lib\G4graphics_reps.lib;C:\Geant4\geant4-v11.0.3_in\lib\G4intercoms.lib;C:\Geant4\geant4-v11.0.3_in\lib\G4global.lib;C:\Geant4\geant4-v11.0.3_in\lib\G4clhep.lib;C:\Geant4\geant4-v11.0.3_in\lib\G4ptl.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64 /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Geant4/workwithg4/TestEm10_b/RelWithDebInfo/TestEm10.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Geant4/workwithg4/TestEm10_b/RelWithDebInfo/TestEm10.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Geant4\workwithg4\TestEm10\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule C:/Geant4/workwithg4/TestEm10/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Geant4/workwithg4/TestEm10 -BC:/Geant4/workwithg4/TestEm10_b --check-stamp-file C:/Geant4/workwithg4/TestEm10_b/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Geant4\boost\boost_1_80_0\lib\cmake\Boost-1.80.0\BoostConfig.cmake;C:\Geant4\boost\boost_1_80_0\lib\cmake\Boost-1.80.0\BoostConfigVersion.cmake;C:\Geant4\boost\boost_1_80_0\lib\cmake\boost_headers-1.80.0\boost_headers-config-version.cmake;C:\Geant4\boost\boost_1_80_0\lib\cmake\boost_headers-1.80.0\boost_headers-config.cmake;C:\Geant4\geant4-v11.0.3_in\lib\Geant4-11.0.3\Geant4Config.cmake;C:\Geant4\geant4-v11.0.3_in\lib\Geant4-11.0.3\Geant4ConfigVersion.cmake;C:\Geant4\geant4-v11.0.3_in\lib\Geant4-11.0.3\Geant4LibraryDepends-release.cmake;C:\Geant4\geant4-v11.0.3_in\lib\Geant4-11.0.3\Geant4LibraryDepends.cmake;C:\Geant4\geant4-v11.0.3_in\lib\Geant4-11.0.3\Geant4PackageCache.cmake;C:\Geant4\geant4-v11.0.3_in\lib\Geant4-11.0.3\Modules\IntelCompileFeatures.cmake;C:\Geant4\geant4-v11.0.3_in\lib\Geant4-11.0.3\Modules\MSVCCompileFeatures.cmake;C:\Geant4\geant4-v11.0.3_in\lib\Geant4-11.0.3\PTL\PTLConfig.cmake;C:\Geant4\geant4-v11.0.3_in\lib\Geant4-11.0.3\PTL\PTLConfigVersion.cmake;C:\Geant4\geant4-v11.0.3_in\lib\Geant4-11.0.3\PTL\PTLTargets-release.cmake;C:\Geant4\geant4-v11.0.3_in\lib\Geant4-11.0.3\PTL\PTLTargets.cmake;C:\Geant4\geant4-v11.0.3_in\lib\Geant4-11.0.3\UseGeant4.cmake;C:\Geant4\workwithg4\TestEm10\TestEm10.in;C:\Geant4\workwithg4\TestEm10\TestEm10.large_N.in;C:\Geant4\workwithg4\TestEm10\TestEm10.large_N.out;C:\Geant4\workwithg4\TestEm10\TestEm10.out;C:\Geant4\workwithg4\TestEm10\alice06.mac;C:\Geant4\workwithg4\TestEm10\bari05.mac;C:\Geant4\workwithg4\TestEm10\barr90.mac;C:\Geant4\workwithg4\TestEm10\harris73.mac;C:\Geant4\workwithg4\TestEm10\salice.mac;C:\Geant4\workwithg4\TestEm10\test_suite.sh;C:\Geant4\workwithg4\TestEm10\vis.mac;C:\Geant4\workwithg4\TestEm10\watase86.mac;C:\Geant4\workwithg4\TestEm10_b\CMakeFiles\3.25.0-rc1\CMakeCCompiler.cmake;C:\Geant4\workwithg4\TestEm10_b\CMakeFiles\3.25.0-rc1\CMakeCXXCompiler.cmake;C:\Geant4\workwithg4\TestEm10_b\CMakeFiles\3.25.0-rc1\CMakeRCCompiler.cmake;C:\Geant4\workwithg4\TestEm10_b\CMakeFiles\3.25.0-rc1\CMakeSystem.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeFindDependencyMacro.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CheckCSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CheckLibraryExists.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\MSVC.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\FindBoost.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\FindOpenGL.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\FindThreads.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\FindXercesC.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Internal\CheckSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Platform\WindowsPaths.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\SelectLibraryConfigurations.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Geant4\workwithg4\TestEm10_b\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule C:/Geant4/workwithg4/TestEm10/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Geant4/workwithg4/TestEm10 -BC:/Geant4/workwithg4/TestEm10_b --check-stamp-file C:/Geant4/workwithg4/TestEm10_b/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Geant4\boost\boost_1_80_0\lib\cmake\Boost-1.80.0\BoostConfig.cmake;C:\Geant4\boost\boost_1_80_0\lib\cmake\Boost-1.80.0\BoostConfigVersion.cmake;C:\Geant4\boost\boost_1_80_0\lib\cmake\boost_headers-1.80.0\boost_headers-config-version.cmake;C:\Geant4\boost\boost_1_80_0\lib\cmake\boost_headers-1.80.0\boost_headers-config.cmake;C:\Geant4\geant4-v11.0.3_in\lib\Geant4-11.0.3\Geant4Config.cmake;C:\Geant4\geant4-v11.0.3_in\lib\Geant4-11.0.3\Geant4ConfigVersion.cmake;C:\Geant4\geant4-v11.0.3_in\lib\Geant4-11.0.3\Geant4LibraryDepends-release.cmake;C:\Geant4\geant4-v11.0.3_in\lib\Geant4-11.0.3\Geant4LibraryDepends.cmake;C:\Geant4\geant4-v11.0.3_in\lib\Geant4-11.0.3\Geant4PackageCache.cmake;C:\Geant4\geant4-v11.0.3_in\lib\Geant4-11.0.3\Modules\IntelCompileFeatures.cmake;C:\Geant4\geant4-v11.0.3_in\lib\Geant4-11.0.3\Modules\MSVCCompileFeatures.cmake;C:\Geant4\geant4-v11.0.3_in\lib\Geant4-11.0.3\PTL\PTLConfig.cmake;C:\Geant4\geant4-v11.0.3_in\lib\Geant4-11.0.3\PTL\PTLConfigVersion.cmake;C:\Geant4\geant4-v11.0.3_in\lib\Geant4-11.0.3\PTL\PTLTargets-release.cmake;C:\Geant4\geant4-v11.0.3_in\lib\Geant4-11.0.3\PTL\PTLTargets.cmake;C:\Geant4\geant4-v11.0.3_in\lib\Geant4-11.0.3\UseGeant4.cmake;C:\Geant4\workwithg4\TestEm10\TestEm10.in;C:\Geant4\workwithg4\TestEm10\TestEm10.large_N.in;C:\Geant4\workwithg4\TestEm10\TestEm10.large_N.out;C:\Geant4\workwithg4\TestEm10\TestEm10.out;C:\Geant4\workwithg4\TestEm10\alice06.mac;C:\Geant4\workwithg4\TestEm10\bari05.mac;C:\Geant4\workwithg4\TestEm10\barr90.mac;C:\Geant4\workwithg4\TestEm10\harris73.mac;C:\Geant4\workwithg4\TestEm10\salice.mac;C:\Geant4\workwithg4\TestEm10\test_suite.sh;C:\Geant4\workwithg4\TestEm10\vis.mac;C:\Geant4\workwithg4\TestEm10\watase86.mac;C:\Geant4\workwithg4\TestEm10_b\CMakeFiles\3.25.0-rc1\CMakeCCompiler.cmake;C:\Geant4\workwithg4\TestEm10_b\CMakeFiles\3.25.0-rc1\CMakeCXXCompiler.cmake;C:\Geant4\workwithg4\TestEm10_b\CMakeFiles\3.25.0-rc1\CMakeRCCompiler.cmake;C:\Geant4\workwithg4\TestEm10_b\CMakeFiles\3.25.0-rc1\CMakeSystem.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeFindDependencyMacro.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CheckCSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CheckLibraryExists.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\MSVC.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\FindBoost.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\FindOpenGL.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\FindThreads.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\FindXercesC.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Internal\CheckSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Platform\WindowsPaths.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\SelectLibraryConfigurations.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Geant4\workwithg4\TestEm10_b\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule C:/Geant4/workwithg4/TestEm10/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Geant4/workwithg4/TestEm10 -BC:/Geant4/workwithg4/TestEm10_b --check-stamp-file C:/Geant4/workwithg4/TestEm10_b/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Geant4\boost\boost_1_80_0\lib\cmake\Boost-1.80.0\BoostConfig.cmake;C:\Geant4\boost\boost_1_80_0\lib\cmake\Boost-1.80.0\BoostConfigVersion.cmake;C:\Geant4\boost\boost_1_80_0\lib\cmake\boost_headers-1.80.0\boost_headers-config-version.cmake;C:\Geant4\boost\boost_1_80_0\lib\cmake\boost_headers-1.80.0\boost_headers-config.cmake;C:\Geant4\geant4-v11.0.3_in\lib\Geant4-11.0.3\Geant4Config.cmake;C:\Geant4\geant4-v11.0.3_in\lib\Geant4-11.0.3\Geant4ConfigVersion.cmake;C:\Geant4\geant4-v11.0.3_in\lib\Geant4-11.0.3\Geant4LibraryDepends-release.cmake;C:\Geant4\geant4-v11.0.3_in\lib\Geant4-11.0.3\Geant4LibraryDepends.cmake;C:\Geant4\geant4-v11.0.3_in\lib\Geant4-11.0.3\Geant4PackageCache.cmake;C:\Geant4\geant4-v11.0.3_in\lib\Geant4-11.0.3\Modules\IntelCompileFeatures.cmake;C:\Geant4\geant4-v11.0.3_in\lib\Geant4-11.0.3\Modules\MSVCCompileFeatures.cmake;C:\Geant4\geant4-v11.0.3_in\lib\Geant4-11.0.3\PTL\PTLConfig.cmake;C:\Geant4\geant4-v11.0.3_in\lib\Geant4-11.0.3\PTL\PTLConfigVersion.cmake;C:\Geant4\geant4-v11.0.3_in\lib\Geant4-11.0.3\PTL\PTLTargets-release.cmake;C:\Geant4\geant4-v11.0.3_in\lib\Geant4-11.0.3\PTL\PTLTargets.cmake;C:\Geant4\geant4-v11.0.3_in\lib\Geant4-11.0.3\UseGeant4.cmake;C:\Geant4\workwithg4\TestEm10\TestEm10.in;C:\Geant4\workwithg4\TestEm10\TestEm10.large_N.in;C:\Geant4\workwithg4\TestEm10\TestEm10.large_N.out;C:\Geant4\workwithg4\TestEm10\TestEm10.out;C:\Geant4\workwithg4\TestEm10\alice06.mac;C:\Geant4\workwithg4\TestEm10\bari05.mac;C:\Geant4\workwithg4\TestEm10\barr90.mac;C:\Geant4\workwithg4\TestEm10\harris73.mac;C:\Geant4\workwithg4\TestEm10\salice.mac;C:\Geant4\workwithg4\TestEm10\test_suite.sh;C:\Geant4\workwithg4\TestEm10\vis.mac;C:\Geant4\workwithg4\TestEm10\watase86.mac;C:\Geant4\workwithg4\TestEm10_b\CMakeFiles\3.25.0-rc1\CMakeCCompiler.cmake;C:\Geant4\workwithg4\TestEm10_b\CMakeFiles\3.25.0-rc1\CMakeCXXCompiler.cmake;C:\Geant4\workwithg4\TestEm10_b\CMakeFiles\3.25.0-rc1\CMakeRCCompiler.cmake;C:\Geant4\workwithg4\TestEm10_b\CMakeFiles\3.25.0-rc1\CMakeSystem.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeFindDependencyMacro.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CheckCSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CheckLibraryExists.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\MSVC.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\FindBoost.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\FindOpenGL.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\FindThreads.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\FindXercesC.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Internal\CheckSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Platform\WindowsPaths.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\SelectLibraryConfigurations.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Geant4\workwithg4\TestEm10_b\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule C:/Geant4/workwithg4/TestEm10/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Geant4/workwithg4/TestEm10 -BC:/Geant4/workwithg4/TestEm10_b --check-stamp-file C:/Geant4/workwithg4/TestEm10_b/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Geant4\boost\boost_1_80_0\lib\cmake\Boost-1.80.0\BoostConfig.cmake;C:\Geant4\boost\boost_1_80_0\lib\cmake\Boost-1.80.0\BoostConfigVersion.cmake;C:\Geant4\boost\boost_1_80_0\lib\cmake\boost_headers-1.80.0\boost_headers-config-version.cmake;C:\Geant4\boost\boost_1_80_0\lib\cmake\boost_headers-1.80.0\boost_headers-config.cmake;C:\Geant4\geant4-v11.0.3_in\lib\Geant4-11.0.3\Geant4Config.cmake;C:\Geant4\geant4-v11.0.3_in\lib\Geant4-11.0.3\Geant4ConfigVersion.cmake;C:\Geant4\geant4-v11.0.3_in\lib\Geant4-11.0.3\Geant4LibraryDepends-release.cmake;C:\Geant4\geant4-v11.0.3_in\lib\Geant4-11.0.3\Geant4LibraryDepends.cmake;C:\Geant4\geant4-v11.0.3_in\lib\Geant4-11.0.3\Geant4PackageCache.cmake;C:\Geant4\geant4-v11.0.3_in\lib\Geant4-11.0.3\Modules\IntelCompileFeatures.cmake;C:\Geant4\geant4-v11.0.3_in\lib\Geant4-11.0.3\Modules\MSVCCompileFeatures.cmake;C:\Geant4\geant4-v11.0.3_in\lib\Geant4-11.0.3\PTL\PTLConfig.cmake;C:\Geant4\geant4-v11.0.3_in\lib\Geant4-11.0.3\PTL\PTLConfigVersion.cmake;C:\Geant4\geant4-v11.0.3_in\lib\Geant4-11.0.3\PTL\PTLTargets-release.cmake;C:\Geant4\geant4-v11.0.3_in\lib\Geant4-11.0.3\PTL\PTLTargets.cmake;C:\Geant4\geant4-v11.0.3_in\lib\Geant4-11.0.3\UseGeant4.cmake;C:\Geant4\workwithg4\TestEm10\TestEm10.in;C:\Geant4\workwithg4\TestEm10\TestEm10.large_N.in;C:\Geant4\workwithg4\TestEm10\TestEm10.large_N.out;C:\Geant4\workwithg4\TestEm10\TestEm10.out;C:\Geant4\workwithg4\TestEm10\alice06.mac;C:\Geant4\workwithg4\TestEm10\bari05.mac;C:\Geant4\workwithg4\TestEm10\barr90.mac;C:\Geant4\workwithg4\TestEm10\harris73.mac;C:\Geant4\workwithg4\TestEm10\salice.mac;C:\Geant4\workwithg4\TestEm10\test_suite.sh;C:\Geant4\workwithg4\TestEm10\vis.mac;C:\Geant4\workwithg4\TestEm10\watase86.mac;C:\Geant4\workwithg4\TestEm10_b\CMakeFiles\3.25.0-rc1\CMakeCCompiler.cmake;C:\Geant4\workwithg4\TestEm10_b\CMakeFiles\3.25.0-rc1\CMakeCXXCompiler.cmake;C:\Geant4\workwithg4\TestEm10_b\CMakeFiles\3.25.0-rc1\CMakeRCCompiler.cmake;C:\Geant4\workwithg4\TestEm10_b\CMakeFiles\3.25.0-rc1\CMakeSystem.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeFindDependencyMacro.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CheckCSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CheckLibraryExists.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\MSVC.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\FindBoost.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\FindOpenGL.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\FindThreads.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\FindXercesC.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Internal\CheckSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Platform\WindowsPaths.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\SelectLibraryConfigurations.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Geant4\workwithg4\TestEm10_b\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="C:\Geant4\workwithg4\TestEm10\TestEm10.cc" />
+    <ClCompile Include="C:\Geant4\workwithg4\TestEm10\src\CrystalTarget.cc" />
+    <ClCompile Include="C:\Geant4\workwithg4\TestEm10\src\DetectorALICE06.cc" />
+    <ClCompile Include="C:\Geant4\workwithg4\TestEm10\src\DetectorBari05.cc" />
+    <ClCompile Include="C:\Geant4\workwithg4\TestEm10\src\DetectorBarr90.cc" />
+    <ClCompile Include="C:\Geant4\workwithg4\TestEm10\src\DetectorConstruction.cc" />
+    <ClCompile Include="C:\Geant4\workwithg4\TestEm10\src\DetectorHarris73.cc" />
+    <ClCompile Include="C:\Geant4\workwithg4\TestEm10\src\DetectorMessenger.cc" />
+    <ClCompile Include="C:\Geant4\workwithg4\TestEm10\src\DetectorSimpleALICE.cc" />
+    <ClCompile Include="C:\Geant4\workwithg4\TestEm10\src\DetectorWatase86.cc" />
+    <ClCompile Include="C:\Geant4\workwithg4\TestEm10\src\EventAction.cc" />
+    <ClCompile Include="C:\Geant4\workwithg4\TestEm10\src\G4ChanRad.cc" />
+    <ClCompile Include="C:\Geant4\workwithg4\TestEm10\src\Materials.cc" />
+    <ClCompile Include="C:\Geant4\workwithg4\TestEm10\src\PhysicsList.cc" />
+    <ClCompile Include="C:\Geant4\workwithg4\TestEm10\src\PhysicsListMessenger.cc" />
+    <ClCompile Include="C:\Geant4\workwithg4\TestEm10\src\PrimaryGeneratorAction.cc" />
+    <ClCompile Include="C:\Geant4\workwithg4\TestEm10\src\RunAction.cc" />
+    <ClCompile Include="C:\Geant4\workwithg4\TestEm10\src\RunMessenger.cc" />
+    <ClCompile Include="C:\Geant4\workwithg4\TestEm10\src\SensitiveDetector.cc" />
+    <ClCompile Include="C:\Geant4\workwithg4\TestEm10\src\StackingAction.cc" />
+    <ClCompile Include="C:\Geant4\workwithg4\TestEm10\src\StepMax.cc" />
+    <ClCompile Include="C:\Geant4\workwithg4\TestEm10\src\StepMaxMessenger.cc" />
+    <ClCompile Include="C:\Geant4\workwithg4\TestEm10\src\TransitionRadiationPhysics.cc" />
+    <ClCompile Include="C:\Geant4\workwithg4\TestEm10\src\crystal_functions.cc" />
+    <ClCompile Include="C:\Geant4\workwithg4\TestEm10\src\phys_const.cc" />
+    <ClInclude Include="C:\Geant4\workwithg4\TestEm10\include\CrystalTarget.hh" />
+    <ClInclude Include="C:\Geant4\workwithg4\TestEm10\include\DetectorALICE06.hh" />
+    <ClInclude Include="C:\Geant4\workwithg4\TestEm10\include\DetectorBari05.hh" />
+    <ClInclude Include="C:\Geant4\workwithg4\TestEm10\include\DetectorBarr90.hh" />
+    <ClInclude Include="C:\Geant4\workwithg4\TestEm10\include\DetectorConstruction.hh" />
+    <ClInclude Include="C:\Geant4\workwithg4\TestEm10\include\DetectorHarris73.hh" />
+    <ClInclude Include="C:\Geant4\workwithg4\TestEm10\include\DetectorMessenger.hh" />
+    <ClInclude Include="C:\Geant4\workwithg4\TestEm10\include\DetectorSimpleALICE.hh" />
+    <ClInclude Include="C:\Geant4\workwithg4\TestEm10\include\DetectorWatase86.hh" />
+    <ClInclude Include="C:\Geant4\workwithg4\TestEm10\include\EventAction.hh" />
+    <ClInclude Include="C:\Geant4\workwithg4\TestEm10\include\G4ChanRad.hh" />
+    <ClInclude Include="C:\Geant4\workwithg4\TestEm10\include\Materials.hh" />
+    <ClInclude Include="C:\Geant4\workwithg4\TestEm10\include\PhysicsList.hh" />
+    <ClInclude Include="C:\Geant4\workwithg4\TestEm10\include\PhysicsListMessenger.hh" />
+    <ClInclude Include="C:\Geant4\workwithg4\TestEm10\include\PrimaryGeneratorAction.hh" />
+    <ClInclude Include="C:\Geant4\workwithg4\TestEm10\include\RadiatorDescription.hh" />
+    <ClInclude Include="C:\Geant4\workwithg4\TestEm10\include\RunAction.hh" />
+    <ClInclude Include="C:\Geant4\workwithg4\TestEm10\include\RunMessenger.hh" />
+    <ClInclude Include="C:\Geant4\workwithg4\TestEm10\include\SensitiveDetector.hh" />
+    <ClInclude Include="C:\Geant4\workwithg4\TestEm10\include\StackingAction.hh" />
+    <ClInclude Include="C:\Geant4\workwithg4\TestEm10\include\StepMax.hh" />
+    <ClInclude Include="C:\Geant4\workwithg4\TestEm10\include\StepMaxMessenger.hh" />
+    <ClInclude Include="C:\Geant4\workwithg4\TestEm10\include\TransitionRadiationPhysics.hh" />
+    <ClInclude Include="C:\Geant4\workwithg4\TestEm10\include\crystal_functions.hh" />
+    <ClInclude Include="C:\Geant4\workwithg4\TestEm10\include\phys_const.hh" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="C:\Geant4\workwithg4\TestEm10_b\ZERO_CHECK.vcxproj">
+      <Project>{6EDEF4F0-0865-3F68-ADD2-422C9B04B9A4}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
