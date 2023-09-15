@@ -1,4 +1,0 @@
-C:/Geant4/workwithg4/TestEm10_b/CMakeFiles/TestEm10.dir
-C:/Geant4/workwithg4/TestEm10_b/CMakeFiles/INSTALL.dir
-C:/Geant4/workwithg4/TestEm10_b/CMakeFiles/ALL_BUILD.dir
-C:/Geant4/workwithg4/TestEm10_b/CMakeFiles/ZERO_CHECK.dir
